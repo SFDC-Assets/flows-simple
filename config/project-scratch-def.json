@@ -1,6 +1,8 @@
 {
-  "orgName": "shane.mclaughlin Company",
+  "orgName": "workshops",
+  "description": "flows simple (lightning adoption)",
   "edition": "Developer",
+  "hasSampleData": true,
   "features": [],
   "settings": {
     "orgPreferenceSettings": {
