@@ -1,3 +1,3 @@
 sfdx force:org:create -d 1 -s -f config/project-scratch-def.json
-# TODO sfdx force:package:install --package 04txxxxxxxxxxxx
+sfdx force:package:install --package 04t1U0000068gtE -w 20
 sfdx force:org:open
