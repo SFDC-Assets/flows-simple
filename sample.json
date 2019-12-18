@@ -1,0 +1,58 @@
+{
+  "deployId": "ttse-sfdc-sfdx-ea-df19workshop-discovery-1573683805690",
+  "complete": true,
+  "completeTimestamp": "2019-11-13T22:31:22.080Z",
+  "browserStartTime": "2019-11-13T22:24:06.466Z",
+  "poolBuildFinishTime": "2019-11-13T22:31:27.746Z",
+  "poolBuildStartTime": "2019-11-13T22:24:06.466Z",
+  "buildStartTime": "2019-11-13T22:24:06.466Z",
+  "lineCount": 3,
+  "orgId": "00D0t0000009kZGEAY",
+  "instanceUrl": "https://trusted-baybridge-7659-dev-ed.cs77.my.salesforce.com/",
+  "mainUser": { "username": "test-bib3tvxcyc1g@example.com" },
+  "expirationDate": "2019-11-27",
+  "additionalUsers": [],
+  "errors": [],
+  "commandResults": [
+    {
+      "command": "git clone -b master --single-branch https://github.com/ttse-sfdc/sfdx-ea-df19workshop-discovery.git ttse-sfdc-sfdx-ea-df19workshop-discovery-1573683805690",
+      "raw": "Cloning into 'ttse-sfdc-sfdx-ea-df19workshop-discovery-1573683805690'...\n"
+    },
+    {
+      "command": "sfdx force:org:create -f config/project-scratch-def.json -d 14 -s -w 60 --json",
+      "summary": "creating an org",
+      "raw": {
+        "status": 0,
+        "result": {
+          "orgId": "00D0t0000009kZGEAY",
+          "username": "test-bib3tvxcyc1g@example.com"
+        }
+      },
+      "shortForm": "created org 00D0t0000009kZGEAY with username test-bib3tvxcyc1g@example.com"
+    },
+    {
+      "command": "sfdx force:source:push --json",
+      "summary": "pushing source",
+      "raw": {
+        "status": 0,
+        "result": {
+          "pushedSource": [
+            {
+              "state": "Add",
+              "fullName": "Admin",
+              "type": "Profile",
+              "filePath": "force-app/main/default/profiles/Admin.profile-meta.xml"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "herokuResults": [],
+  "currentCommand": "",
+  "poolLines": {
+    "openLine": "sfdx force:org:open -p /analytics/wave/wave.apexp#home",
+    "passwordLine": "sfdx force:user:password:generate"
+  },
+  "isPool": true
+}

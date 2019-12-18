@@ -1,12 +1,12 @@
 {
   "orgName": "workshops",
+  "adminEmail": "shane@mailinator.com",
   "description": "flows simple (lightning adoption)",
   "edition": "Developer",
   "hasSampleData": true,
-  "features": [],
   "settings": {
-    "orgPreferenceSettings": {
-      "s1DesktopEnabled": true
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
     }
   }
 }
